@@ -1,10 +1,10 @@
 import React from "react";
-
 import { Button } from "@/components/ui/button";
 import { Parisienne } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Navbar from "./_components/Navbar";
+import AnimationSVG from "./_components/AnimationSVG";
 
 const parisienne = Parisienne({
   subsets: ["latin"],
@@ -54,6 +54,11 @@ export default function page() {
           </div>
         </div>
       </main>
+      <div className="relative h-dvh w-screen min-h-screen bg-pink-200 flex justify-center items-center flex-col">
+        <div className="w-fit h-fit border-2 border-white rounded-full p-4 flex justify-center items-center">
+          <AnimationSVG />
+        </div>
+      </div>
     </div>
   );
 }
